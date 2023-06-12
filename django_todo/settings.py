@@ -9,7 +9,10 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
+import os
 
+if os.path.isfile("env.py"):
+    import env
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +28,7 @@ SECRET_KEY = '(django-insecure-e_29kym1$t4msz=&70kj#p990ppg-0cyxtlq^dc-ton+y1rc*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-dawkapi82-djangotodo-20nzx0ipkhg.ws-us99.gitpod.io']
+ALLOWED_HOSTS = ['8000-dawkapi82-djangotodo-20nzx0ipkhg.ws-eu99.gitpod.io']
 
 
 # Application definition
